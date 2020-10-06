@@ -51,3 +51,6 @@ simple_wipeフォルダをそのままプロジェクトの「data/others/plugin
 ```
 
 具体的な使用例はsimple_wipe/sample.ksにあります。
+お問合せ: 
+    mail: makiro.fuse@gmail.com
+    twitter: [@makiro152](https://twitter.com/makiro152)
