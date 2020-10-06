@@ -29,10 +29,10 @@ simple_wipeフォルダをそのままプロジェクトの「data/others/plugin
 
 ```
 ; ワイプ窓表示
-[wipe_show layer="message_layer_num"]
+[wipe_window_show layer="message_layer_num"]
 
 ; ワイプ窓非表示
-[wipe_show layer="message_layer_num"]
+[wipe_window_hide layer="message_layer_num"]
 
 ; ワイプで使うキャラの登録(storageはdata/fgimage/以下の画像)
 [wipe_chara_new name="chara_name" storage="image_path_from_fgimage/" face="image_name"]
