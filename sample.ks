@@ -6,6 +6,7 @@
 ; 2. simple_wipeをdata/others/pluginに配置してください
 ; 3. first.ksに`@plugin name="simple_wipe"` を追加してください(@jumpの前)
 ; 4. scene1.ksをこのsample.ksの内容で上書きしてください
+; 5. data/fgimage/wipe_charaディレクトリを作成し、data/fgimage/charaの内容をまるまるコピー
 
 *start
 
