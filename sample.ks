@@ -5,8 +5,19 @@
 ; @plugin name="simple_wipe"
 ; を追加してください
 
+*start
+
+[cm  ]
+[clearfix]
+[start_keyconfig]
+
+[bg storage="room.jpg" time="100"]
+
+;メニューボタンの表示
+@showmenubutton
+
 ;メッセージウィンドウの設定
-[position layer="message0" left=160 top=500 width=1000 height=200 page=fore visible=true]
+[position layer="message0" left=270 top=500 width=1000 height=200 page=fore visible=true]
 
 ;文字が表示される領域を調整
 [position layer=message0 page=fore margint="45" marginl="150" marginr="70" marginb="60"]
@@ -47,6 +58,8 @@
 [wipe_chara_face name="yamato" face="sad"     storage="wipe_chara/yamato/sad.png"]
 [wipe_chara_face name="yamato" face="tohoho"  storage="wipe_chara/yamato/tohoho.png"]
 
+; ワイプ窓表示
+[wipe_window_show]
 ; ワイプにキャラ表示
 [wipe_chara_show name="yamato"]
 #
@@ -68,7 +81,7 @@
 
 ;キャラクター登場
 [chara_show  name="akane" wait="false"]
-; ワイプのキャラ表示
+; chara_showのwaitをfalseにすると同じタイミングで表示されます
 [wipe_chara_show name="akane"]
 #?
 こんにちは。[p]
@@ -76,7 +89,8 @@
 #あかね
 もしかして、ノベルゲームの開発に興味があるの？[p]
 
-[wipe_chara_show name="yamato"]
+; ワイプのキャラを非表示
+[wipe_chara_hide]
 #
 [glink  color="blue"  storage="scene1.ks"  size="28"  x="360"  width="500"  y="150"  text="はい。興味あります"  target="*selectinterest"  ]
 [glink  color="blue"  storage="scene1.ks"  size="28"  x="360"  width="500"  y="250"  text="興味あります！"  target="*selectinterest"  ]
@@ -85,6 +99,7 @@
 *selectinterest
 
 [chara_mod  name="akane" face="happy"  wait="false"]
+; wipe_chara_modはwipe_chara_showのエイリアスなので、どちらを使ってもよい
 [wipe_chara_mod  name="akane" face="happy"  ]
 #あかね
 わー。興味あるなんて、嬉しいなー。[p]
@@ -103,9 +118,8 @@
 そんな君に、耳寄りな情報があるんだけど[p]
 ききたい？　ききたいよね？[p]
 
-[chara_hide name="akane"]
-; ワイプのキャラ非表示
+[chara_hide name="akane" wait="false"]
 [wipe_chara_hide]
-
+[wipe_window_hide]
 ; ループ
 [jump target="*start"]
