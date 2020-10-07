@@ -1,9 +1,10 @@
 ; 画像がない・初期化をしていないのでこのままでは動きません
 ; ティラノスクリプト公式様のscene1.ksの改変です
 
-; first.ksに
-; @plugin name="simple_wipe"
-; を追加してください
+; このサンプルを動かす手順
+; 0. 新しいプロジェクトを立ち上げてください
+; 1. first.ksに`@plugin name="simple_wipe"` を追加してください(@jumpの前)
+; 2. scene1.ksをこのsample.ksの内容で上書きしてください
 
 *start
 
