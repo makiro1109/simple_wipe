@@ -1,7 +1,5 @@
 # Simple Wipe for TyranoScript v5
 
-___
-
 ## 概要
 
 TyranoScript v5.00向けのプラグインです。（ES2015記法のため)
@@ -9,7 +7,7 @@ TyranoScript v5.00向けのプラグインです。（ES2015記法のため)
 ![ティラノスクリプト解説 2020_10_06 15_10_17](https://user-images.githubusercontent.com/47486806/95165447-f2a98300-07e6-11eb-90f8-eafabc3213f0.png)
 
 ゲーム画面にワイプ（テレビでVTR中に芸能人が小さく表示されているやつ）が表示できます。
-TyranoScript公式の[機能デモ](https://tyrano.jp/sample2/code/siryou/21#demo)にもほぼ同様の動作をするchara_modを使ったマクロがあります。
+キャラの立ち絵を追加で表示させるだけならTyranoScript公式の[機能デモ](https://tyrano.jp/sample2/code/siryou/21#demo)にもほぼ同様の動作をするchara_modを使ったマクロがあります。
 
 ### 特徴
 
